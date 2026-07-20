@@ -1,0 +1,14 @@
+feature,description
+Daily_Return,1-day adjusted-close percentage return
+Rolling_Return_5D,5-trading-day adjusted-close percentage return
+Rolling_Return_20D,20-trading-day adjusted-close percentage return
+Rolling_Return_60D,60-trading-day adjusted-close percentage return
+Momentum_20D,20-trading-day price momentum
+Rolling_Volatility_20D,20-day return volatility annualized by sqrt(252)
+Rolling_Volatility_60D,60-day return volatility annualized by sqrt(252)
+RSI_14,14-period RSI using Wilder original recursive smoothing
+MACD,12-period EMA minus 26-period EMA
+MACD_Signal,9-period EMA of MACD
+MACD_Hist,MACD minus MACD signal
+Inflation_YoY,Year-over-year percentage change derived from CPI
+Macro_Regime,Optional heuristic growth/inflation/rate regime tag

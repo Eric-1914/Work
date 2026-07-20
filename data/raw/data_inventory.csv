@@ -1,0 +1,7 @@
+dataset,category,frequency,source,series_or_ticker,file
+XLF,ETF market data,Daily (trading days),Yahoo Finance via yfinance,XLF,data/raw/XLF.csv
+XLK,ETF market data,Daily (trading days),Yahoo Finance via yfinance,XLK,data/raw/XLK.csv
+XLE,ETF market data,Daily (trading days),Yahoo Finance via yfinance,XLE,data/raw/XLE.csv
+GDP_GROWTH,Macroeconomic data,Quarterly,FRED,A191RL1Q225SBEA,data/raw/GDP_GROWTH.csv
+CPI,Macroeconomic data,Monthly,FRED,CPIAUCSL,data/raw/CPI.csv
+FEDFUNDS,Macroeconomic data,Monthly,FRED,FEDFUNDS,data/raw/FEDFUNDS.csv

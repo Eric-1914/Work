@@ -1,0 +1,18 @@
+Macro_Regime,count
+Expansion | Inflation:Low | Rates:Stable,545
+Expansion | Inflation:High | Rates:Stable,536
+Expansion | Inflation:Moderate | Rates:Stable,483
+Expansion | Inflation:High | Rates:Rising,313
+Expansion | Inflation:Moderate | Rates:Falling,225
+Expansion | Inflation:Unknown | Rates:Stable,210
+Expansion | Inflation:Moderate | Rates:Rising,191
+Contraction | Inflation:Low | Rates:Falling,84
+Expansion | Inflation:Low | Rates:Falling,62
+Contraction | Inflation:Moderate | Rates:Stable,59
+Contraction | Inflation:Low | Rates:Stable,43
+Unknown | Inflation:Unknown | Rates:Stable,41
+Contraction | Inflation:High | Rates:Stable,41
+Expansion | Inflation:Low | Rates:Rising,24
+Contraction | Inflation:High | Rates:Rising,21
+Unknown | Inflation:Unknown | Rates:Unknown,20
+Contraction | Inflation:Moderate | Rates:Falling,3

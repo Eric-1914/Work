@@ -2,79 +2,81 @@
 
 Innovation AI Internship Project
 
-## Week 1: Data Infrastructure & Acquisition
+## Baseline Assets
 
-The Week 1 baseline establishes the data layer for a machine learning-based sector rotation strategy.
-
-### Sector ETF market data
-
-Initial sector ETFs:
 - XLF — Financials
 - XLK — Technology
 - XLE — Energy
 
-Daily fields:
-- Open
-- High
-- Low
-- Close
-- Adjusted Close
-- Volume
+## Week 1
 
-### Macroeconomic data
-
-FRED series:
-- `A191RL1Q225SBEA` — Real GDP growth, quarterly percent change from the preceding period, seasonally adjusted annual rate
-- `CPIAUCSL` — Consumer Price Index for All Urban Consumers: All Items, monthly, seasonally adjusted
-- `FEDFUNDS` — Federal Funds Effective Rate, monthly
-
-`CPIAUCSL` is a price index rather than an inflation-rate series. Year-over-year inflation will be derived from the CPI series during Week 2 feature engineering.
-
-### Data storage
-
-Raw observations are stored as CSV files under `data/raw/`.
-
-```text
-data/raw/
-├── XLF.csv
-├── XLK.csv
-├── XLE.csv
-├── GDP_GROWTH.csv
-├── CPI.csv
-├── FEDFUNDS.csv
-└── data_inventory.csv
-```
-
-Time-series cleaning, frequency alignment, technical indicators, rolling returns, and volatility calculations are deferred to Week 2.
-
-## Setup
-
-From the repository root:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Run Week 1 data collection
+Week 1 collects ETF historical prices and FRED macroeconomic data.
 
 ```bash
 python src/data_collection/collect_week1_data.py
-```
-
-## Validate the downloaded data
-
-```bash
 python src/data_collection/validate_week1_data.py
 ```
 
-A successful validation ends with:
+## Week 2: Data Cleaning, Feature Engineering & EDA
 
-```text
-[DONE] All Week 1 raw datasets passed validation.
+Week 2 performs:
+
+- time-series cleaning and alignment,
+- RSI,
+- MACD,
+- momentum,
+- rolling returns,
+- rolling volatility,
+- exploratory analysis,
+- sector correlation analysis,
+- optional macroeconomic regime tagging.
+
+Run the full pipeline:
+
+```bash
+python run_week2.py
 ```
 
-## Optional fundamental data
+Or run each step:
 
-Sector-level P/E and EPS data are not included in the baseline because they are optional in the project specification and consistent historical sector-level datasets may require additional licensed or paid data sources.
+```bash
+python src/data_cleaning/clean_data.py
+python src/feature_engineering/build_features.py
+python src/eda/run_eda.py
+python src/validation/validate_week2.py
+```
+
+Expected outputs:
+
+```text
+data/processed/
+├── sector_prices.csv
+├── macro_aligned_daily.csv
+├── cleaning_summary.csv
+├── sector_features.csv
+└── feature_dictionary.csv
+
+results/figures/
+├── normalized_sector_prices.png
+├── sector_return_correlation.png
+├── rolling_return_20d.png
+├── rolling_volatility_20d.png
+├── momentum_20d.png
+├── rsi_14.png
+└── macd_histogram.png
+
+results/tables/
+├── sector_return_summary.csv
+├── sector_correlation.csv
+├── latest_feature_snapshot.csv
+└── macro_regime_summary.csv
+
+docs/
+├── data_sources.md
+├── week2_methodology.md
+└── early_insights_report.md
+```
+
+Important:
+Macroeconomic observations are aligned with approximate publication lags.
+Production-grade backtests should use exact point-in-time release/vintage data.
