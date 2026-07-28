@@ -1,0 +1,16 @@
+{
+  "target": "Target_Outperform",
+  "continuous_target": "Relative_Return_21D",
+  "forecast_horizon_trading_days": 21,
+  "benchmark": "Equal-weight mean of XLF, XLK, and XLE",
+  "sampling_frequency": "Calendar month-end signal observations",
+  "sectors": [
+    "XLF",
+    "XLK",
+    "XLE"
+  ],
+  "rows": 372,
+  "unique_signal_dates": 124,
+  "start_date": "2016-02-29",
+  "end_date": "2026-05-29"
+}

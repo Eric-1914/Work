@@ -1,0 +1,11 @@
+{
+  "train_start": "2016-02-29",
+  "train_end": "2024-03-28",
+  "gap_date": "2024-04-30",
+  "test_start": "2024-05-31",
+  "test_end": "2026-05-29",
+  "train_signal_dates": 98,
+  "test_signal_dates": 25,
+  "train_rows": 294,
+  "test_rows": 75
+}

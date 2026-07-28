@@ -1,0 +1,5 @@
+{
+  "selection_rule": "Highest mean expanding-window CV balanced accuracy among non-dummy models",
+  "selected_model": "Soft_Voting_Ensemble",
+  "selected_model_mean_cv_balanced_accuracy": 0.4801613008569531
+}
