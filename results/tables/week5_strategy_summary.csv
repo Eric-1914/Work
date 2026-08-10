@@ -1,0 +1,5 @@
+Strategy,Months,Average_Selected_Sectors,Average_Invested_Weight,Average_Cash_Weight,Average_One_Way_Turnover,Maximum_Sector_Weight
+Top_N_Equal_Weight,25,2.0,1.0,0.0,0.38,0.5
+Threshold_Equal_Weight,25,1.56,0.7120000000000001,0.288,0.532,0.6
+Probability_Score_Weighted,25,3.0,1.0,0.0,0.13175899932102653,0.5057532950074142
+Combined_Default,25,1.36,0.7120000000000001,0.288,0.507689481466509,0.6

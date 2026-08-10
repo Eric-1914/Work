@@ -1,0 +1,31 @@
+{
+  "week": 5,
+  "input_signals": "results/tables/week4_selected_model_signals.csv",
+  "signal_source": "Week 4 selected-model outperformance probabilities",
+  "sectors": [
+    "XLF",
+    "XLK",
+    "XLE"
+  ],
+  "cash_asset": "CASH",
+  "rebalance_frequency": "Monthly",
+  "execution_timing": "Next trading session after each signal date",
+  "top_n": 2,
+  "probability_threshold": 0.5,
+  "max_sector_weight": 0.6,
+  "constraints": {
+    "long_only": true,
+    "leverage": false,
+    "shorting": false,
+    "cash_absorbs_unallocated_weight": true
+  },
+  "strategies": {
+    "Top_N_Equal_Weight": "Select top 2 sectors by model rank and equal-weight them.",
+    "Threshold_Equal_Weight": "Select sectors with probability >= 0.50 and equal-weight them.",
+    "Probability_Score_Weighted": "Weight all sectors in proportion to model probability.",
+    "Combined_Default": "Apply probability >= 0.50, keep top 2, then weight by probability."
+  },
+  "selected_week4_model_labels": [
+    "Gradient_Boosting"
+  ]
+}
