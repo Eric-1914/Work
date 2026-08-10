@@ -1,0 +1,6 @@
+model,TN,FP,FN,TP
+Logistic_Regression,28,13,21,13
+Random_Forest,21,20,22,12
+Gradient_Boosting,22,19,14,20
+Soft_Voting_Ensemble,25,16,17,17
+Regime_Switching_Ensemble,21,20,15,19

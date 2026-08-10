@@ -1,0 +1,13 @@
+Macro_Regime,training_observations,class_0_count,class_1_count,local_model_fitted,local_model_weight
+Growth=Contraction|Inflation=High|Rate=Rising,3,2,1,False,0.0
+Growth=Contraction|Inflation=High|Rate=Stable,6,3,3,False,0.0
+Growth=Contraction|Inflation=Low|Rate=Falling,9,5,4,False,0.0
+Growth=Contraction|Inflation=Low|Rate=Stable,9,4,5,False,0.0
+Growth=Expansion|Inflation=High|Rate=Rising,42,21,21,True,0.37692307692307686
+Growth=Expansion|Inflation=High|Rate=Stable,54,29,25,True,0.42
+Growth=Expansion|Inflation=Low|Rate=Falling,6,2,4,False,0.0
+Growth=Expansion|Inflation=Low|Rate=Rising,3,1,2,False,0.0
+Growth=Expansion|Inflation=Low|Rate=Stable,81,35,46,True,0.48461538461538456
+Growth=Expansion|Inflation=Moderate|Rate=Falling,9,4,5,False,0.0
+Growth=Expansion|Inflation=Moderate|Rate=Rising,21,12,9,False,0.0
+Growth=Expansion|Inflation=Moderate|Rate=Stable,51,27,24,True,0.41034482758620683

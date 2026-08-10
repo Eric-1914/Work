@@ -1,0 +1,13 @@
+Macro_Regime,observations,months,outperformance_rate,first_date,last_date
+Growth=Expansion|Inflation=Low|Rate=Stable,81,27,0.5679012345679012,2016-02-29,2021-03-31
+Growth=Expansion|Inflation=High|Rate=Stable,54,18,0.46296296296296297,2021-05-28,2024-03-28
+Growth=Expansion|Inflation=Moderate|Rate=Stable,51,17,0.47058823529411764,2017-01-31,2021-04-30
+Growth=Expansion|Inflation=High|Rate=Rising,42,14,0.5,2022-07-29,2023-09-29
+Growth=Expansion|Inflation=Moderate|Rate=Rising,21,7,0.42857142857142855,2017-03-31,2019-01-31
+Growth=Contraction|Inflation=Low|Rate=Falling,9,3,0.4444444444444444,2020-04-30,2020-06-30
+Growth=Contraction|Inflation=Low|Rate=Stable,9,3,0.5555555555555556,2020-07-31,2020-09-30
+Growth=Expansion|Inflation=Moderate|Rate=Falling,9,3,0.5555555555555556,2019-12-31,2020-02-28
+Growth=Contraction|Inflation=High|Rate=Stable,6,2,0.5,2022-04-29,2022-05-31
+Growth=Expansion|Inflation=Low|Rate=Falling,6,2,0.6666666666666666,2019-10-31,2019-11-29
+Growth=Contraction|Inflation=High|Rate=Rising,3,1,0.3333333333333333,2022-06-30,2022-06-30
+Growth=Expansion|Inflation=Low|Rate=Rising,3,1,0.6666666666666666,2016-03-31,2016-03-31
