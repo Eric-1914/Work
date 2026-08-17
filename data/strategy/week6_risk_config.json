@@ -1,0 +1,48 @@
+{
+  "week": 6,
+  "objective": "Risk Management & Optimization",
+  "inputs": {
+    "week5_portfolio": "results/tables/week5_default_portfolio.csv",
+    "daily_returns": "data/processed/sector_features.csv"
+  },
+  "sectors": [
+    "XLF",
+    "XLK",
+    "XLE"
+  ],
+  "cash_asset": "CASH",
+  "risk_estimation": {
+    "lookback_trading_days": 60,
+    "minimum_observations": 40,
+    "annualization_factor": 252,
+    "covariance_shrinkage_to_diagonal": 0.2,
+    "uses_only_data_on_or_before_signal_date": true
+  },
+  "constraints": {
+    "long_only": true,
+    "leverage": false,
+    "max_sector_weight": 0.6,
+    "max_one_way_turnover_per_rebalance": 0.5,
+    "initial_deployment_counts_as_rebalance": false,
+    "turnover_limit_exceptions": [
+      "mandatory exit from a sector removed by the Week 5 signal",
+      "drawdown-driven risk reduction"
+    ],
+    "drawdown_trigger": -0.1,
+    "defensive_max_gross_sector_exposure": 0.5
+  },
+  "optimization": {
+    "mean_variance": {
+      "risk_aversion": 2.0,
+      "grid_step": 0.01
+    },
+    "inverse_volatility": "inverse trailing annualized volatility with volatility targeting",
+    "volatility_target": 0.12,
+    "final_blend": {
+      "MVO_Constrained": 0.5,
+      "Inverse_Volatility_Targeted": 0.5
+    }
+  },
+  "defensive_overlay": "If pre-rebalance live drawdown is <= -10%, cap sector exposure at 50% and hold the rest in cash. Risk-reducing trades may exceed the normal turnover limit.",
+  "execution_rule": "Next trading session after signal date"
+}
