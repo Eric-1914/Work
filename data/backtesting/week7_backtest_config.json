@@ -1,0 +1,20 @@
+{
+  "week6_target_input": "results/tables/week6_optimized_portfolio.csv",
+  "sector_return_input": "data/processed/sector_features.csv",
+  "spy_source": "data/processed/spy_benchmark.csv (downloaded via yfinance)",
+  "transaction_cost_bps": 5.0,
+  "slippage_bps": 5.0,
+  "total_friction_bps_per_risky_dollar_traded": 10.0,
+  "execution_rule": "Signal after close; trade after next trading-session close; new target effective from following daily return observation",
+  "benchmark_treatment": "SPY is buy-and-hold after the common initial execution close; equal-weight sectors rebalance monthly on the same execution dates; both benchmarks are frictionless",
+  "rolling_window_days": 126,
+  "rolling_step_days": 21,
+  "cost_sensitivity_total_bps": [
+    0.0,
+    5.0,
+    10.0,
+    20.0,
+    40.0
+  ],
+  "annualization_days": 252
+}

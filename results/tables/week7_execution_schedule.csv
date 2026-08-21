@@ -1,0 +1,26 @@
+Signal_Date,Execution_Date,Effective_From_Date,Execution_Assumption
+2024-05-31,2024-06-03,2024-06-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-06-28,2024-07-01,2024-07-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-07-31,2024-08-01,2024-08-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-08-30,2024-09-03,2024-09-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-09-30,2024-10-01,2024-10-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-10-31,2024-11-01,2024-11-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-11-29,2024-12-02,2024-12-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2024-12-31,2025-01-02,2025-01-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-01-31,2025-02-03,2025-02-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-02-28,2025-03-03,2025-03-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-03-31,2025-04-01,2025-04-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-04-30,2025-05-01,2025-05-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-05-30,2025-06-02,2025-06-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-06-30,2025-07-01,2025-07-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-07-31,2025-08-01,2025-08-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-08-29,2025-09-02,2025-09-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-09-30,2025-10-01,2025-10-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-10-31,2025-11-03,2025-11-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-11-28,2025-12-01,2025-12-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2025-12-31,2026-01-02,2026-01-05,Trade after execution-date close; new weights earn returns from the following trading observation
+2026-01-30,2026-02-02,2026-02-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2026-02-27,2026-03-02,2026-03-03,Trade after execution-date close; new weights earn returns from the following trading observation
+2026-03-31,2026-04-01,2026-04-02,Trade after execution-date close; new weights earn returns from the following trading observation
+2026-04-30,2026-05-01,2026-05-04,Trade after execution-date close; new weights earn returns from the following trading observation
+2026-05-29,2026-06-01,2026-06-02,Trade after execution-date close; new weights earn returns from the following trading observation
