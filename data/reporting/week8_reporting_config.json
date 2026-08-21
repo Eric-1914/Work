@@ -1,0 +1,22 @@
+{
+  "week8_scope": [
+    "final_analysis",
+    "code_reproducibility_inventory",
+    "visual_reporting",
+    "static_html_dashboard",
+    "module_and_process_documentation"
+  ],
+  "input_files": {
+    "week7_performance_summary": "results/tables/week7_performance_summary.csv",
+    "week7_daily_backtest": "results/tables/week7_daily_backtest.csv",
+    "week7_benchmark_daily": "results/tables/week7_benchmark_daily.csv",
+    "week7_rolling_validation": "results/tables/week7_rolling_validation.csv",
+    "week7_cost_sensitivity": "results/tables/week7_cost_sensitivity.csv",
+    "week7_rebalance_log": "results/tables/week7_rebalance_log.csv",
+    "week6_optimized_portfolio": "results/tables/week6_optimized_portfolio.csv"
+  },
+  "dashboard": "results/dashboard/week8_dashboard.html",
+  "final_report": "docs/week8_final_report.md",
+  "project_documentation": "docs/week8_project_documentation.md",
+  "design_note": "Week 8 reports existing Week 6/7 outputs without retuning model or strategy parameters."
+}

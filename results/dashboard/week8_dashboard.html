@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 8 Final Dashboard</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #f4f6f8; color: #202124; }
+main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+h1, h2 { margin-bottom: 10px; }
+.note { color: #5f6368; margin-bottom: 24px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+.card { background: white; border: 1px solid #dfe3e8; border-radius: 10px; padding: 16px; }
+.card .label { font-size: 13px; color: #5f6368; }
+.card .value { font-size: 26px; font-weight: 650; margin-top: 5px; }
+.panel { background: white; border: 1px solid #dfe3e8; border-radius: 10px; padding: 18px; margin: 16px 0; overflow-x: auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); gap: 16px; }
+img { width: 100%; height: auto; border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { border-bottom: 1px solid #e5e7eb; padding: 8px 10px; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+.status { font-weight: 700; }
+</style>
+</head>
+<body><main>
+<h1>Week 8 — Final Analysis Dashboard</h1>
+<p class="note">Final reporting layer built from validated Week 6 portfolio targets and Week 7 backtest outputs. No model or strategy retuning is performed here.</p>
+<div class="cards">
+<div class="card"><div class="label">CAGR</div><div class="value">10.72%</div></div>
+<div class="card"><div class="label">Sharpe</div><div class="value">0.848</div></div>
+<div class="card"><div class="label">Sortino</div><div class="value">1.139</div></div>
+<div class="card"><div class="label">Max Drawdown</div><div class="value">-18.03%</div></div>
+<div class="card"><div class="label">Data Quality</div><div class="value status">PASS</div></div>
+</div>
+<div class="panel"><h2>Final Scorecard</h2><table><thead><tr><th>Metric</th><th>Week7_Strategy_Net</th><th>SPY_Benchmark</th><th>Equal_Weighted_Sectors</th><th>Strategy_minus_SPY</th><th>Strategy_minus_EqualWeight</th></tr></thead><tbody><tr><td>Total_Return</td><td>23.97%</td><td>44.63%</td><td>52.32%</td><td>-20.65%</td><td>-28.34%</td></tr><tr><td>CAGR</td><td>10.72%</td><td>19.10%</td><td>22.06%</td><td>-8.38%</td><td>-11.34%</td></tr><tr><td>Annualized_Volatility</td><td>13.01%</td><td>16.62%</td><td>17.01%</td><td>-3.60%</td><td>-4.00%</td></tr><tr><td>Sharpe_0RF</td><td>0.8478</td><td>1.1346</td><td>1.2572</td><td>-0.2868</td><td>-0.4094</td></tr><tr><td>Sortino_0MAR</td><td>1.1388</td><td>1.6813</td><td>1.7824</td><td>-0.5425</td><td>-0.6436</td></tr><tr><td>Max_Drawdown</td><td>-18.03%</td><td>-18.76%</td><td>-19.11%</td><td>0.72%</td><td>1.08%</td></tr><tr><td>Daily_Win_Rate</td><td>48.68%</td><td>57.14%</td><td>56.95%</td><td>-8.46%</td><td>-8.27%</td></tr></tbody></table></div>
+<div class="grid">
+<div class="panel"><h2>CAGR Comparison</h2><img src="../figures/week8_cagr_comparison.png" alt="CAGR comparison"></div>
+<div class="panel"><h2>Risk-Adjusted Comparison</h2><img src="../figures/week8_risk_adjusted_comparison.png" alt="Risk-adjusted comparison"></div>
+<div class="panel"><h2>Rolling Sharpe</h2><img src="../figures/week8_rolling_sharpe.png" alt="Rolling Sharpe"></div>
+<div class="panel"><h2>Cost Robustness</h2><img src="../figures/week8_cost_robustness.png" alt="Cost robustness"></div>
+<div class="panel"><h2>Latest Allocation</h2><img src="../figures/week8_latest_allocation.png" alt="Latest allocation"></div>
+</div>
+<div class="panel"><h2>Latest Allocation Table</h2><table><thead><tr><th>Signal_Date</th><th>Asset</th><th>Target_Weight</th></tr></thead><tbody><tr><td>2026-05-29</td><td>XLK</td><td>0.3738</td></tr><tr><td>2026-05-29</td><td>XLF</td><td>0.3570</td></tr><tr><td>2026-05-29</td><td>CASH</td><td>0.2692</td></tr><tr><td>2026-05-29</td><td>XLE</td><td>0.0000</td></tr></tbody></table></div>
+<div class="panel"><h2>Robustness Summary</h2><table><thead><tr><th>Measure</th><th>Value</th></tr></thead><tbody><tr><td>Rolling_Window_Count</td><td>24.0000</td></tr><tr><td>Rolling_Sharpe_Median</td><td>0.6683</td></tr><tr><td>Rolling_Sharpe_Min</td><td>-1.1433</td></tr><tr><td>Positive_Rolling_Sharpe_Share</td><td>0.5833</td></tr><tr><td>Positive_Rolling_CAGR_Share</td><td>0.5833</td></tr><tr><td>Worst_Rolling_Max_Drawdown</td><td>-0.1728</td></tr><tr><td>Zero_Friction_Total_Return</td><td>0.2574</td></tr><tr><td>Base_10bps_Total_Return</td><td>0.2397</td></tr><tr><td>Highest_Friction_Total_Return</td><td>0.1881</td></tr><tr><td>Return_Drag_Zero_to_Highest_Friction</td><td>0.0694</td></tr><tr><td>Total_One_Way_Turnover</td><td>10.5554</td></tr><tr><td>Total_Trading_Cost_Fraction</td><td>0.0142</td></tr></tbody></table></div>
+<div class="panel"><h2>Data Quality Audit</h2><table><thead><tr><th>Check</th><th>Passed</th></tr></thead><tbody><tr><td>Required_Strategies_Present</td><td>True</td></tr><tr><td>Daily_Dates_Unique</td><td>True</td></tr><tr><td>Benchmark_Dates_Unique</td><td>True</td></tr><tr><td>Daily_and_Benchmark_Date_Range_Match</td><td>True</td></tr><tr><td>Daily_Equity_Positive</td><td>True</td></tr><tr><td>Daily_Returns_Finite</td><td>True</td></tr><tr><td>Rolling_Windows_Available</td><td>True</td></tr><tr><td>Cost_Sensitivity_Available</td><td>True</td></tr><tr><td>Rebalance_Log_Available</td><td>True</td></tr><tr><td>Week6_Targets_Available</td><td>True</td></tr></tbody></table></div>
+</main></body></html>

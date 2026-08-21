@@ -1,0 +1,11 @@
+Check,Passed
+Required_Strategies_Present,True
+Daily_Dates_Unique,True
+Benchmark_Dates_Unique,True
+Daily_and_Benchmark_Date_Range_Match,True
+Daily_Equity_Positive,True
+Daily_Returns_Finite,True
+Rolling_Windows_Available,True
+Cost_Sensitivity_Available,True
+Rebalance_Log_Available,True
+Week6_Targets_Available,True

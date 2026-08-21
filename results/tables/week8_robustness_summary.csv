@@ -1,0 +1,13 @@
+Measure,Value
+Rolling_Window_Count,24.0
+Rolling_Sharpe_Median,0.6682979623581553
+Rolling_Sharpe_Min,-1.1433251929497448
+Positive_Rolling_Sharpe_Share,0.5833333333333334
+Positive_Rolling_CAGR_Share,0.5833333333333334
+Worst_Rolling_Max_Drawdown,-0.1728160860399394
+Zero_Friction_Total_Return,0.2574283169466926
+Base_10bps_Total_Return,0.239739341758191
+Highest_Friction_Total_Return,0.188069556687723
+Return_Drag_Zero_to_Highest_Friction,0.06935876025896962
+Total_One_Way_Turnover,10.5554429304895
+Total_Trading_Cost_Fraction,0.014161734034119279
